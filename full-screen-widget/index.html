@@ -12,7 +12,7 @@
 <body>
     <div id="error-msg"></div>
     <script type="text/javascript">
-        let appId = "23a6d30a59d247fa64605501f58074ea3";
+        let appId = "3a110b0453024b128b70a5df34462a318";// replace this with your application id
         let referer = window.document.referrer;
 
         if (!appId) {
@@ -20,7 +20,7 @@
         } else {
             (function (d, m) {
                 var kommunicateSettings = {
-                    "appId": appId, // replace this with your application id
+                    "appId": appId, 
                     "onInit": function () {
                         var iframeStyle = document.createElement('style');
                         var classSettings = ".change-kommunicate-iframe-height{height:100%!important;width:100%!important;right:0!important;bottom:0!important;max-height: 100%!important;}";
@@ -50,7 +50,7 @@
                     }
                 };
                 var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-                s.src = 'https://widget-test.kommunicate.io/v2/kommunicate.app';
+                s.src = 'https://widget.kommunicate.io/v2/kommunicate.app';
                 var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
                 window.kommunicate = m; m._globals = kommunicateSettings;
                 window.kommunicate.IFRAME_OVERRIDES = {}; window.kommunicate.IFRAME_OVERRIDES.GROUP_CREATION_URL = referer;
